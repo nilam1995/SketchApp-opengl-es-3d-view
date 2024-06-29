@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.example.sketchapplication.DrawingView
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
+
+        <com.example.sketchapplication.MyGLSurfaceView
+            android:id="@+id/my3DView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#CCCCCC">
+
+            <Button
+                android:id="@+id/btnFreehand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freehand" />
+
+            <Button
+                android:id="@+id/btnRectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectangle" />
+
+            <Button
+                android:id="@+id/btnEraser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eraser" />
+
+            <Button
+                android:id="@+id/btn3DView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3D View" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>
